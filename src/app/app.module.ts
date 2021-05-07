@@ -17,7 +17,8 @@ import { MessagesComponent } from './messages/messages.component'; // <-- NgMode
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,//這段要加，不然<router-outlet></router-outlet>會報錯
   ],
   providers: [],
   bootstrap: [AppComponent]
